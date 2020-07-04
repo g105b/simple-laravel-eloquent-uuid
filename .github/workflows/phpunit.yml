@@ -22,4 +22,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     - uses: php-actions/composer@v1
-    - uses: php-actions/phpunit@v1
+    - name: PhpUnit Tests
+      uses: php-actions/phpunit@v1
+      with:
+        config: phpunit.xml
